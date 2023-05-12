@@ -1,0 +1,33 @@
+body{
+    background-color: $color-three;
+    section{
+        h1{
+            @extend %titulos;
+            @include flex_one (flex-start, space-evenly, wrap)
+            
+               
+        }
+       p{
+            @extend %textos_p     
+       }
+    }
+}
+
+
+aside{
+    h1{
+        color: $color-one;
+        font-family: $font-two;
+        font-size:xx-large;
+    }
+    a{
+        color: $color-two;
+        font-size: medium;
+    }
+}
+
+header{
+    z-index: 99;
+    position: sticky;
+   top: 0;
+}

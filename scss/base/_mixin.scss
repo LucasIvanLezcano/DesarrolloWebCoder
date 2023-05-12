@@ -1,0 +1,18 @@
+@mixin flex_one ($alineacion, $justify, $wrap) {
+    display: flex;
+    flex-direction: row;
+    align-items: $alineacion;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+}
+
+
+@mixin caja ($ancho, $alto){
+    position: relative;
+    width: $ancho;
+    height: $alto;
+    background: $color-three;
+    box-shadow: 0px 0px 25px $color-one;
+}
+
+

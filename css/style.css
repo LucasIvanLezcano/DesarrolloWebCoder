@@ -1,3 +1,247 @@
+body section p {
+  padding: 15%;
+  background-color: none;
+  border-radius: 10%;
+  color: whitesmoke;
+  font-family: "Cormorant SC", serif;
+  font-size: large;
+}
 
+body section h1 {
+  color: whitesmoke;
+  font-family: "Cormorant SC", serif;
+}
+
+.navbar {
+  background-color: whitesmoke;
+  font-family: "Cormorant SC", serif;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: black;
+}
+.navbar-brand:hover, .navbar-brand:focus,
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  border-bottom: 1px solid black;
+}
+
+body {
+  background-color: black;
+}
+body section h1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+aside h1 {
+  color: #2f4d4d;
+  font-family: "Cormorant SC", serif;
+  font-size: xx-large;
+}
+aside a {
+  color: whitesmoke;
+  font-size: medium;
+}
+
+header {
+  z-index: 99;
+  position: sticky;
+  top: 0;
+}
+
+footer h5 {
+  color: whitesmoke;
+  font-size: small;
+}
+footer p {
+  font-size: x-small;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  height: 10%;
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.box {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: black;
+  box-shadow: 0px 0px 25px #2f4d4d;
+}
+
+.box .imgBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.box .imgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.box .content {
+  position: absolute;
+  height: 0;
+  background: whitesmoke;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.box:hover .content {
+  width: 100%;
+  height: 100%;
+}
+
+.box .content p {
+  margin: 5%;
+  padding: 0;
+  transition: 0.5s;
+  text-align: justify;
+}
+
+.box:hover .content p {
+  opacity: 1;
+  transition-delay: 0.5s;
+}
+
+.box .content .hover-card {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.box:hover .content .hover-card {
+  opacity: 1;
+  transition-delay: 0.5s;
+}
+
+.profile {
+  margin-top: 20%;
+  color: black;
+  text-align: center;
+}
+
+.profile p {
+  padding: 0px;
+  font-size: 80%;
+  text-align: justify;
+}
+
+.personajes_box {
+  position: relative;
+  width: 300px;
+  height: 550px;
+  background: black;
+  box-shadow: 0px 0px 25px #2f4d4d;
+}
+
+.personajes_box .personajes_imgBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.personajes_box .personajes_imgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  object-fit: contain;
+}
+
+.personajes_box .personajes_imgBox h1 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  font-family: "Cormorant SC", serif;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  font-size: 100%;
+}
+
+.personajes_box .personajes_imgBox p {
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  width: 90%;
+  height: 50%;
+  font-family: "Cormorant SC", serif;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  font-size: 75%;
+}
+
+main div h1 {
+  color: whitesmoke;
+  font-family: "Cormorant SC", serif;
+  font-size: x-large;
+}
+main div ul li {
+  color: whitesmoke;
+  font-family: "Cormorant SC", serif;
+  font-size: medium;
+}
+main div div iframe {
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.img-gy {
+  width: 100%;
+  transition: transform 0.3s ease-out;
+}
+.img-gy:hover {
+  transform: scale(1.2);
+}
+
+.row-img {
+  display: flex;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 25%;
+  padding: 5px;
+}
+
+.column img {
+  margin-top: 10px;
+}
+
+@media (max-width: 576px) {
+  .column {
+    flex: 50%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
