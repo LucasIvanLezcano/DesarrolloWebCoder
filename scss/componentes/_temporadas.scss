@@ -1,0 +1,22 @@
+main{
+    div{
+        h1{
+            color: $color-two;
+            font-family: $font-two;
+            font-size: x-large;         
+        }
+        ul{
+            li{
+                color: $color-two;
+                font-family: $font-two;
+                font-size: medium; 
+            }
+        }
+
+        div{
+            iframe{
+                max-width: 100%;
+            }
+        }
+    }
+}

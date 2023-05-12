@@ -16,27 +16,33 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="grid_index">
         <header>
-            <nav>
-                <ul class="navbar" id="navbar">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="./houses.html">Casas</a></li>
-                    <li><a href="personajes.html">Personajes</a></li>
-                    <li><a href="./temporadas.html">Temporadas</a></li>
-                    <li><a href="./galeria.html">Galeria</a></li>
-                    <a class="close" href="#">
-                        <img src="https://ljc-dev.github.io/testing0/ham-close.svg" alt="close">
-                    </a>
-                </ul>
-                  <a class="hamburger" href="#navbar">
-                      <img src="https://ljc-dev.github.io/testing0/ham.svg" alt="menu">
-                  </a>
-            </nav>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <a class="navbar-brand" href="../index.html">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" href="./houses.html">Casas</a></li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="./personajes.html">Personajes</a></li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="./temporadas.html">Temporadas</a></li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="./galeria.html">Galeria</a></li>
+
+                  </ul>
+                </div>
+              </nav>
         </header>
 
         <main>
-            <div class="personajes_container">
+            <div class="container">
                 <div class="personajes_box">
                     <div class="personajes_imgBox">
                         <img src="../img/danny2.jpg" alt="logo de la casa Stark de G.O.T">
@@ -139,29 +145,31 @@
                     </div>
 
                 </div>
-
-
-                <div class="personajes_box">
-                    <div class="personajes_imgBox">
-                        <img src="../img/jaime1.jpg" alt="logo de la casa Stark de G.O.T">
-                        <h1>Jaime Lannister</h1>
-                        <p>Es el hermano gemelo de Cersei Lannister y es conocido por su habilidad como espadachín y su reputación como el "Matareyes". 
-                            A lo largo de la serie, Jaime se ve envuelto en conspiraciones y traiciones para proteger a su familia, lo que lo convierte en un personaje controvertido. 
-                            Sin embargo, también muestra momentos de humanidad y compasión, especialmente hacia su hermano menor Tyrion. La relación de Jaime con Cersei es compleja y problemática.
-                            Jaime es interpretado por el actor Nikolaj Coster-Waldau.
-                        </p>
-                    </div>
-
-                </div>
-
             </div>
         </main>
 
+        <footer class=" text-light">
+            <div class="container text-center text-md-start">
+              <div class="row text-center text-md-start">
+                <div class="col-sm-12">
+  
+                  <h5 class="text-uppercase mb-2 font-weight-bold">Nosotros</h5>
+                  <hr class="mb-2">
+                  <p>
+                    Esta es una página web dedicada a la serie Game of Thrones, donde encontrarás información sobre los personajes, casas, temporadas y galería de imágenes.
+                  </p>
+                </div>
+  
+  
+  
+              </div>
+            </div>
+          </footer>
 
 
 
     </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>    
 </body>
 </html>
     
