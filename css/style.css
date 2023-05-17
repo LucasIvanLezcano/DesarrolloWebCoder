@@ -7,9 +7,11 @@ body section p {
   font-size: large;
 }
 
-body section h1 {
+article h2, body section h1 {
   color: whitesmoke;
   font-family: "Cormorant SC", serif;
+  font-size: 50px;
+  font-weight: 590;
 }
 
 .navbar {
@@ -37,10 +39,15 @@ body section h1 {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+body section p {
+  font-weight: 500;
+}
+
 aside h1 {
   color: #2f4d4d;
   font-family: "Cormorant SC", serif;
   font-size: xx-large;
+  font-weight: 500;
 }
 aside a {
   color: whitesmoke;
@@ -51,6 +58,36 @@ header {
   z-index: 99;
   position: sticky;
   top: 0;
+}
+
+article h2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+article a {
+  color: whitesmoke;
+  font-family: "Cormorant SC", serif;
+  font-weight: 500;
+  text-decoration-line: none;
+  margin-top: 40px;
+}
+article hr {
+  color: whitesmoke;
+  width: 50%;
+  height: 200px;
+  margin-top: 80px;
+}
+
+.hr-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: none;
+  flex-wrap: none;
+  flex-direction: column;
 }
 
 footer h5 {
@@ -78,7 +115,7 @@ footer p {
   width: 300px;
   height: 400px;
   background: black;
-  box-shadow: 0px 0px 25px #2f4d4d;
+  box-shadow: 0px 0px 15px #2f4d4d;
 }
 
 .box .imgBox {
@@ -151,15 +188,16 @@ footer p {
   width: 300px;
   height: 550px;
   background: black;
-  box-shadow: 0px 0px 25px #2f4d4d;
+  box-shadow: 0px 0px 15px #2f4d4d;
 }
 
 .personajes_box .personajes_imgBox {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 100%;
   height: 100%;
+  background: black;
+  box-shadow: 0px 0px 15px #2f4d4d;
+  position: absolute;
 }
 
 .personajes_box .personajes_imgBox img {
@@ -201,6 +239,7 @@ main div h1 {
   color: whitesmoke;
   font-family: "Cormorant SC", serif;
   font-size: x-large;
+  font-weight: 500;
 }
 main div ul li {
   color: whitesmoke;

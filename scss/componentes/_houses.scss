@@ -6,6 +6,7 @@
     @include flex_one(center, space-between, wrap);
 }
 
+
 .box{
     @include caja(300px, 400px)
 }

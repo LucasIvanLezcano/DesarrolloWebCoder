@@ -3,12 +3,12 @@ body{
     section{
         h1{
             @extend %titulos;
-            @include flex_one (flex-start, space-evenly, wrap)
-            
-               
+            @include flex_one (flex-start, space-evenly, wrap);                 
         }
+
        p{
-            @extend %textos_p     
+            @extend %textos_p;
+            font-weight: 500;     
        }
     }
 }
@@ -19,10 +19,12 @@ aside{
         color: $color-one;
         font-family: $font-two;
         font-size:xx-large;
+        font-weight: 500;
     }
     a{
         color: $color-two;
         font-size: medium;
+        
     }
 }
 
@@ -30,4 +32,34 @@ header{
     z-index: 99;
     position: sticky;
    top: 0;
+}
+
+article{
+    h2{
+        @include flex_one(center,space-evenly, wrap);
+        @extend %titulos
+    }
+    a{
+        color: $color-two;
+        font-family: $font-two;
+        font-weight: 500;
+        text-decoration-line: none;
+        margin-top: 40px;
+    }
+    hr{
+        color: $color-two;
+        width: 50%;
+        height: 200px;
+        margin-top: 80px;
+        
+        
+    }
+
+}
+
+
+.hr-center{
+    @include flex_one (center, none, none); 
+    flex-direction: column;
+
 }
