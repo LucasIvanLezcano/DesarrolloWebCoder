@@ -2,13 +2,16 @@
     width: 100%;
     max-width: 100%;
     height: 10%;
-    padding: 40px;
-    @include flex_one(center, space-between, wrap);
+    padding:40px;
+    margin: 0%;
+    @include flex_one(center, center, wrap);
 }
 
 
 .box{
-    @include caja(300px, 400px)
+    @include caja(300px, 400px);
+    margin: 0.5%;
+    
 }
 .box .imgBox{
     position: absolute;

@@ -16,14 +16,18 @@ body{
 
 aside{
     h1{
-        color: $color-one;
-        font-family: $font-two;
-        font-size:xx-large;
-        font-weight: 500;
+        @extend %titulos;
+        @include flex_one (flex-start, center, wrap); 
     }
     a{
         color: $color-two;
-        font-size: medium;
+        font-size: large;
+        text-decoration: none;
+        &:hover,
+        &:focus {
+          border-bottom: 1px solid $color-two;
+        }
+        
         
     }
 }
@@ -53,7 +57,8 @@ article{
         margin-top: 80px;
         
         
-    }
+    }  
+    
 
 }
 
@@ -61,6 +66,7 @@ article{
 .hr-center{
     @include flex_one (center, none, none); 
     flex-direction: column;
+    
 
 }
 

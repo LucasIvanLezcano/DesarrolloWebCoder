@@ -1,6 +1,8 @@
 
 .personajes_box{
-    @include caja(300px, 550px)
+    @include caja(300px, 550px);
+    margin: 0.5%;
+
 }
 
 .personajes_box .personajes_imgBox{
